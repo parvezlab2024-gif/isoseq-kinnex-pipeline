@@ -1,0 +1,30 @@
+# conda environment for the Iso-Seq pipeline
+# build with: bash SETUP/setup_environment.sh
+# These are the versions we ran. Newer PacBio tools usually work but flags
+# and output names do change between releases (pigeon especially).
+name: pacbio_workflow
+channels:
+  - conda-forge
+  - bioconda
+
+dependencies:
+  # PacBio
+  - pbskera=1.4.0
+  - lima=2.13.0
+  - isoseq=4.3.0
+  - pbmm2=1.17.0
+  - pbpigeon=1.4.0
+  - pbtk=3.5.0
+
+  # general
+  - samtools=1.22.1
+  - htslib=1.22.1
+  - gffread=0.12.7
+  - mosdepth=0.3.11
+  - gawk
+
+  # for the *_QC.py plots
+  - python=3.11
+  - numpy
+  - pandas
+  - matplotlib-base

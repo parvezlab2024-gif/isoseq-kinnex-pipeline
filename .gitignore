@@ -1,0 +1,24 @@
+# Data and outputs: never commit
+*.bam
+*.bai
+*.pbi
+*.fa
+*.fasta
+!01_SEGMENTATION/adapters/*.fasta
+!02_LIMA_REFINE/primers/*.fasta
+*.fastq*
+*.gtf
+*.gff
+*.gff3
+*.fai
+*.mmi
+*.gz
+results/
+*/logs/*
+!*/logs/.gitkeep
+RAW/*
+!RAW/README.md
+REFERENCE/*
+!REFERENCE/README.md
+__pycache__/
+*.pyc

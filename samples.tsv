@@ -1,0 +1,16 @@
+# barcode = lima barcode pair name (as in the primer FASTA, joined by "--")
+# sample  = what you want the sample called. Becomes the column name in
+#           collapse's flnc_count.txt, so keep it short, no spaces or commas.
+# group   = condition. Used for per-group clustering and QC colours.
+# cell    = optional. Only needed if the same barcode was reused for different
+#           samples on different SMRT cells. Put part of the cell/movie name
+#           here (e.g. m84241_260523_024948_s1). Leave blank or "all" otherwise.
+# Lines starting with # are ignored. Columns are TAB separated.
+# The rows below are an example (6 samples, 2 groups). Replace them.
+barcode	sample	group	cell
+IsoSeqX_bc01_5p--IsoSeqX_3p	CTRL_1	CTRL	all
+IsoSeqX_bc02_5p--IsoSeqX_3p	CTRL_2	CTRL	all
+IsoSeqX_bc03_5p--IsoSeqX_3p	CTRL_3	CTRL	all
+IsoSeqX_bc04_5p--IsoSeqX_3p	TREAT_1	TREAT	all
+IsoSeqX_bc05_5p--IsoSeqX_3p	TREAT_2	TREAT	all
+IsoSeqX_bc06_5p--IsoSeqX_3p	TREAT_3	TREAT	all
